@@ -1,12 +1,20 @@
-<nav>
-    <ul>
-      <li><a routerLink="/" routerLinkActive="active">Inicio</a></li>
-      <li><a routerLink="/properties" routerLinkActive="active">Propiedades</a></li>
-      <li><a routerLink="/reservations" routerLinkActive="active">Reservaciones</a></li>
-      <li><a routerLink="/account/profile" routerLinkActive="active">Mi Cuenta</a></li>
-      <li><a routerLink="/support" routerLinkActive="active">Soporte</a></li>
-      <li><a routerLink="/payments" routerLinkActive="active">Pagos</a></li>
-      <li><a routerLink="/account/login" routerLinkActive="active">Iniciar Sesión</a></li>
-      <li><a routerLink="/account/register" routerLinkActive="active">Registrarse</a></li>
-    </ul>
+<nav class="navbar">
+  <div class="navbar-logo">
+    <a routerLink="/">
+      <img src="assets/rentease_logo.png" alt="RentEase Logo">
+    </a>
+  </div>
+  <ul class="navbar-links">
+    <li><a routerLink="/" routerLinkActive="active">Inicio</a></li>
+    <li><a routerLink="/properties" routerLinkActive="active">Propiedades</a></li>
+    <li><a routerLink="/reservations" routerLinkActive="active">Reservaciones</a></li>
+    <li><a routerLink="/support" routerLinkActive="active">Soporte</a></li>
+    <li><a routerLink="/payments" routerLinkActive="active">Pagos</a></li>
+  </ul>
+  <div class="navbar-user">
+    <a routerLink="/account">
+      <img src="assets/user_icon.png" alt="User Icon">
+    </a>
+  </div>
+  <button class="navbar-toggle" (click)="toggleMenu()">&#9776;</button>
 </nav>

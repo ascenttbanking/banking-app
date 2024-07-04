@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: 'Font Awesome 5 Free', sans-serif;
+  }
+  
+  .fa, .fas, .far, .fal, .fab {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+  }
+  

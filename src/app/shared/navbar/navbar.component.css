@@ -1,0 +1,80 @@
+/* navbar.component.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 0 20px;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 80px; /* Mayor altura */
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+.navbar-logo img {
+  height: 60px; /* Aumentar la altura del logo */
+}
+
+.navbar-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px; /* Mayor separación entre enlaces */
+}
+
+.navbar-links li a {
+  color: black;
+  text-decoration: none;
+  padding: 18px 24px;
+  font-weight: bold;
+  font-size: 18px; /* Letras más grandes */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+  border-radius: 4px;
+}
+
+.navbar-links li a:hover,
+.navbar-links li a.active {
+  background-color: #ddd;
+  color: #333; /* Color de texto al pasar el ratón */
+  border-radius: 4px;
+}
+
+.navbar-user a {
+  display: block;
+}
+
+.navbar-user img {
+  height: 50px; /* Aumentar la altura del icono de usuario */
+  border-radius: 50%;
+  border: 1px solid #333;
+  transition: transform 0.3s ease; /* Transición suave */
+}
+
+.navbar-user img:hover {
+  transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+}
+
+.navbar-toggle {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+}

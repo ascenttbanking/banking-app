@@ -1,0 +1,152 @@
+.footer {
+    background-color: #1c1c1c; /* Color más oscuro */
+    color: #fff;
+    padding: 40px 0;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around; /* Distribuye las columnas equitativamente */
+    flex-wrap: wrap; /* Permite que las columnas se ajusten en pantallas pequeñas */
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #d4d4d4;
+}
+
+.footer .navbar-brand h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #d35400; /* Gris rojizo */
+}
+
+.footer p, .footer h5 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer .btn {
+    border-radius: 50%;
+    background-color: #0056b3; /* Azul más oscuro */
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.footer .btn:hover {
+    background-color: #004080;
+    transform: scale(1.1);
+}
+
+.footer .btn-lg-square {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* Eliminar margen y padding innecesario */
+    margin: 0;
+    padding: 0;
+}
+
+.footer .border-top {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer .text-primary {
+    color: #d35400 !important; /* Gris rojizo */
+}
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.footer .d-flex {
+    justify-content: center; /* Centrar los iconos de redes sociales */
+    margin-bottom: 20px;
+}
+
+.footer .d-flex a {
+    margin: 0 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent; /* Eliminar el fondo azul */
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.footer .d-flex a:hover {
+    background-color: transparent;
+    transform: scale(1.1);
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between; /* Distribuir los divs equitativamente */
+    flex-wrap: wrap;
+    width: 100%; /* Asegurar que ocupa todo el ancho del contenedor */
+    max-width: 1200px; /* Limitar el ancho máximo para centrar el contenido */
+    margin: 0 auto; /* Centrar la fila dentro del contenedor */
+}
+
+.footer .col-md-4 {
+    flex: 1;
+    margin: 10px; /* Añadir margen entre los divs */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinear el contenido a la izquierda */
+}
+
+.footer .col-md-4 h5 {
+    align-self: flex-start; /* Alinear los encabezados a la izquierda */
+}
+
+#center-section {
+    align-items: center; /* Alinear el contenido al centro en la sección central */
+    text-align: center; /* Centrar el texto en la sección central */
+}
+
+#center-section .navbar-brand,
+#center-section p,
+#center-section .d-flex {
+    align-self: center; /* Centrar elementos específicos */
+}
+
+#center-section p {
+    text-align: center; /* Centrar los párrafos */
+}
+
+.container-fluid.bg-dark.text-light.border-top.py-4 {
+    background-color: #1c1c1c; /* Mantener el color oscuro para la parte inferior */
+    text-align: center; /* Centrar el texto en la parte inferior */
+    width: 100%;
+    padding: 20px 0;
+}
+
+.container-fluid.bg-dark.text-light.border-top.py-4 .row {
+    display: flex;
+    justify-content: space-between; /* Distribuir equitativamente */
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px; /* Limitar el ancho máximo para centrar el contenido */
+    margin: 0 auto; /* Centrar la fila dentro del contenedor */
+}
+
+.container-fluid.bg-dark.text-light.border-top.py-4 .col-md-6 {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+}
+
+.container-fluid.bg-dark.text-light.border-top.py-4 .col-md-6 p {
+    color: #fff; /* Cambiar el texto a blanco */
+}
